@@ -33,23 +33,23 @@ class PopupWindowAdd(QDialog):
 
         # First column (column 1)
         image1 = QLabel()
-        pixmap1 = QPixmap("imagepopupflagone.png")
+        pixmap1 = QPixmap(r"icons\imagepopupflagone.png")
         image1.setPixmap(pixmap1.scaled(50, 50))
         layout.addWidget(image1, 1, 1)
 
         self.text1 = QLineEdit("")
         layout.addWidget(self.text1, 1, 2)
 
-        speak_button1 = QPushButton(QIcon("speakimage.png"), "")
+        speak_button1 = QPushButton(QIcon(r"icons\speakimage.png"), "")
         speak_button1.clicked.connect(self.speakimageone)
         layout.addWidget(speak_button1, 1, 3)
         
-        record_button1 = QPushButton(QIcon("recordimage.png"), "")
+        record_button1 = QPushButton(QIcon(r"icons\recordimage.png"), "")
         record_button1.clicked.connect(self.recordenglish)
         layout.addWidget(record_button1, 3, 4)
 
         # Second column (column 2)
-        translate_button = QPushButton(QIcon("translateimage.png"), "")
+        translate_button = QPushButton(QIcon(r"icons\translateimage.png"), "")
         translate_button.clicked.connect(self.translatefunc)
         layout.addWidget(translate_button, 2, 2)
 
@@ -59,14 +59,14 @@ class PopupWindowAdd(QDialog):
 
         # Third column (column 3)
         image2 = QLabel()
-        pixmap2 = QPixmap("imagepopupflagtwo.png")
+        pixmap2 = QPixmap(r"icons\imagepopupflagtwo.png")
         image2.setPixmap(pixmap2.scaled(50, 50))
         layout.addWidget(image2, 3, 1)
 
         self.text2 = QLineEdit("")
         layout.addWidget(self.text2, 3, 2)
 
-        speak_button2 = QPushButton(QIcon("speakimage.png"), "")
+        speak_button2 = QPushButton(QIcon(r"icons\speakimage.png"), "")
         speak_button2.clicked.connect(self.speakimagetwo)
         layout.addWidget(speak_button2, 3, 3)
         
@@ -236,16 +236,16 @@ class PopupWindowPlayFlashcards(QDialog):
             self.current_index = -1
             self.big_button.setText("No data available")
 
-        self.small_button1 = QPushButton(QIcon("speakimage.png"), "")
+        self.small_button1 = QPushButton(QIcon(r"icons\speakimage.png"), "")
         self.small_button1.clicked.connect(self.window_play_one)
 
-        self.small_button2 = QPushButton(QIcon("iconnext.png"), "")
+        self.small_button2 = QPushButton(QIcon(r"icons\iconnext.png"), "")
         self.small_button2.clicked.connect(self.window_play_two)
 
-        self.small_button3 = QPushButton(QIcon("correct.png"), "")
+        self.small_button3 = QPushButton(QIcon(r"icons\correct.png"), "")
         self.small_button3.clicked.connect(self.window_play_three)
 
-        self.small_button4 = QPushButton(QIcon("incorrect.png"), "")
+        self.small_button4 = QPushButton(QIcon(r"icons\incorrect.png"), "")
         self.small_button4.clicked.connect(self.window_play_four)
 
         self.text_label1 = QLabel("")
@@ -540,16 +540,16 @@ file_menu = menu_bar.addMenu("File")
 
 left_column_layout = QVBoxLayout()
 
-icon1 = IconWidget("icon1.png", icon1_click_function, 50, 50)
+icon1 = IconWidget(r"icons\icon1.png", icon1_click_function, 50, 50)
 left_column_layout.addWidget(icon1)
 
-icon2 = IconWidget("icon2.png", icon2_click_function, 50, 50)
+icon2 = IconWidget(r"icons\icon2.png", icon2_click_function, 50, 50)
 left_column_layout.addWidget(icon2)
 
-icon3 = IconWidget("icon3.png", icon3_click_function, 50, 50)
+icon3 = IconWidget(r"icons\icon3.png", icon3_click_function, 50, 50)
 left_column_layout.addWidget(icon3)
 
-icon4 = IconWidget("icon4.png", icon4_click_function, 50, 50)
+icon4 = IconWidget(r"icons\icon4.png", icon4_click_function, 50, 50)
 left_column_layout.addWidget(icon4)
 
 left_column_layout.setAlignment(Qt.AlignTop)
