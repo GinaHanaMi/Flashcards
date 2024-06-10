@@ -370,7 +370,7 @@ class PopupWindowPlayFlashcards(QDialog):
 class NoResizeMainWindow(QMainWindow):
     def __init__(self):
         super(NoResizeMainWindow, self).__init__()
-        self.setFixedSize(85, 720)
+        self.setFixedSize(85, 340)
 
 
 class IconWidget(QWidget):
